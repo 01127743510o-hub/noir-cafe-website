@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15110e">
+  <meta name="description" content="NOIR CAFÉ - قهوة فاخرة ومواقف لا تُنسى">
+  <meta name="author" content="NEXORA">
+  <title>NOIR CAFÉ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Tajawal:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="NOIR CAFÉ home">
+        <span class="brand-mark">N</span>
+        <span class="brand-name">NOIR <b>CAFÉ</b></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">الرئيسية</a>
+        <a href="#about" data-i18n="navAbout">من نحن</a>
+        <a href="#menu" data-i18n="navMenu">القائمة</a>
+        <a href="#gallery" data-i18n="navGallery">معرض الصور</a>
+        <a href="#why-us" data-i18n="navWhy">لماذا نحن</a>
+        <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="language-btn" id="language-toggle" type="button" aria-label="Switch to English">EN</button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1800&q=90">
+        <source src="hero-coffee.webm" type="video/webm">
+      </video>
+      <div class="hero-backdrop"></div>
+      <div class="container hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">قهوة مختصة منذ 2018</p>
+        <h1 data-i18n="heroTitle">لحظتك الخاصة<br><em>تبدأ بالقهوة</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">نكهات مُتقنة، أجواء هادئة، وتجربة تُصنع لتبقى في الذاكرة.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu" data-i18n="heroMenu">استكشف القائمة</a>
+          <a class="btn btn-ghost" href="#about" data-i18n="heroStory">حكايتنا</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85" alt="NOIR café interior" loading="lazy">
+          <div class="experience-badge"><strong>8</strong><span data-i18n="years">سنوات من الشغف</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">حكايتنا</p>
+          <h2 data-i18n="aboutTitle">نتقن فن القهوة، ونصنع أجواءً لها طابعها الخاص</h2>
+          <p data-i18n="aboutCopy">في NOIR نؤمن بأن القهوة ليست مشروبًا فحسب، بل تجربة تبدأ من لحظة الاختيار وتنتهي بصنع ذكرى. نختار حبوبنا بعناية من محاصيل مميزة، ونحمّصها ونحضّرها بخبرة عالية تبرز نكهاتها الطبيعية في كل كوب. صممنا مساحتنا لتجمع بين الدفء والأناقة والهدوء، لتكون المكان المثالي للعمل واللقاءات الهادئة أو الاستمتاع بلحظة لنفسك وسط أجواء لا تشبه غيرها.</p>
+          <div class="signature"><span>NOIR</span><small data-i18n="founder">المؤسسون</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow" data-i18n="menuEyebrow">اختياراتنا المميزة</p>
+            <h2 data-i18n="menuTitle">القائمة</h2>
+          </div>
+          <p data-i18n="menuCopy">مكونات مختارة بعناية وتحضيرات يدوية، من القهوة الكلاسيكية إلى الحلويات الطازجة.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=900&q=85" alt="Espresso" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="espresso">إسبريسو كلاسيك</h3><p data-i18n="espressoDesc">قهوة مركّزة بنكهات الشوكولاتة الداكنة</p></div><strong>18</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=900&q=85" alt="Cappuccino" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="cappuccino">كابتشينو نوير</h3><p data-i18n="cappuccinoDesc">إسبريسو وحليب مخملي ورغوة متوازنة</p></div><strong>32</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85" alt="Spanish latte" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="spanishLatte">سبانيش لاتيه</h3><p data-i18n="spanishDesc">كريمة ناعمة بلمسة حلاوة مدروسة</p></div><strong>38</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Butter croissant" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="croissant">كرواسون زبدة</h3><p data-i18n="croissantDesc">كرواسون فرنسي هش ومخبوز طازجًا</p></div><strong>28</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=85" alt="Cheesecake" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="cheesecake">تشيز كيك التوت</h3><p data-i18n="cheesecakeDesc">جبن كريمي وتوت طازج وصلصة نباتية</p></div><strong>42</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85" alt="Iced cold brew coffee" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="coldbrew">كولد برو نوير</h3><p data-i18n="coldbrewDesc">قهوة باردة منقوعة 18 ساعة وتقدم مع الثلج</p></div><strong>36</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="mocha-coffee.jpg" alt="Caffè Mocha coffee with latte art" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="mocha">موكا الشوكولاتة</h3><p data-i18n="mochaDesc">مزيج متوازن من الإسبريسو والشوكولاتة الداكنة والحليب المبخر، وبطبقة رقيقة من الرغوة الكريمية.</p></div><strong>40</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="iced-americano.jpg" alt="Iced Americano coffee with ice" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="americano">آيس أمريكانو</h3><p data-i18n="americanoDesc">إسبريسو مخفف بالماء البارد ويقدم مع مكعبات الثلج؛ نكهة قهوة واضحة وقوام خفيف ومنعش.</p></div><strong>30</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="hot-chocolate.jpg" alt="Premium cup of hot chocolate" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="hotChocolate">هوت شوكليت فاخر</h3><p data-i18n="hotChocolateDesc">مشروب دافئ مخملي من الشوكولاتة الداكنة والحليب، يعلوه قليل من الكريمة المخفوقة الخفيفة.</p></div><strong>35</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Dessert_Tiramisu.jpg/960px-Dessert_Tiramisu.jpg" alt="Tiramisu dessert" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="tiramisu">تيراميسو</h3><p data-i18n="tiramisuDesc">حلوى إيطالية كلاسيكية بطبقات من البسكويت المنقوع بالقهوة، كريم الماسكاربوني الناعم والكاكاو ولمسة مرّة متوازنة.</p></div><strong>48</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85" alt="Chocolate brownie" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="brownie">براونى الشوكولاتة</h3><p data-i18n="brownieDesc">براوني داكن غني بقوام طري في الوسط وحواف مقرمشة، مصنوع بالشوكولاتة ومغطى بصوص شوكولاتة ناعم.</p></div><strong>38</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-img"><img src="pancakes-honey.jpg" alt="Pancake stack topped with honey and walnuts" loading="lazy"></div>
+            <div class="menu-info"><div><h3 data-i18n="pancakes">بان كيك بالعسل</h3><p data-i18n="pancakesDesc">بان كيك طازج بتلات هشة، عسل طبيعي سائـل وجوز مقرمش ولمسة من الفواكه الموسمية.</p></div><strong>52</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow" data-i18n="galleryEyebrow">لحظاتنا</p>
+            <h2 data-i18n="galleryTitle">من قلب الكافيه</h2>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-tall reveal"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85" alt="Cafe seating" loading="lazy"></figure>
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Pour over coffee" loading="lazy"></figure>
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="Coffee cup" loading="lazy"></figure>
+          <figure class="gallery-item gallery-wide reveal"><img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=85" alt="Cafe bar" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section section" id="why-us">
+      <div class="container why-grid">
+        <div class="why-intro reveal">
+          <p class="eyebrow" data-i18n="whyEyebrow">لماذا NOIR؟</p>
+          <h2 data-i18n="whyTitle">تفاصيل صغيرة تصنع تجربة كاملة</h2>
+        </div>
+        <div class="why-items">
+          <article class="why-item reveal"><span>01</span><div><h3 data-i18n="why1Title">حبوب مختارة</h3><p data-i18n="why1Copy">نختار المحاصيل الموسمية من مزارع موثوقة حول العالم.</p></div></article>
+          <article class="why-item reveal"><span>02</span><div><h3 data-i18n="why2Title">تحضير متقن</h3><p data-i18n="why2Copy">كل كوب يُحضّر بعناية وبإيقاع يحافظ على نكهته الأصلية.</p></div></article>
+          <article class="why-item reveal"><span>03</span><div><h3 data-i18n="why3Title">مساحة تدعو للبقاء</h3><p data-i18n="why3Copy">تصميم دافئ وموسيقى هادئة لكل لقاء أو لحظة فردية.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="contact-bg"></div>
+      <div class="container contact-content reveal">
+        <p class="eyebrow" data-i18n="contactEyebrow">نراك قريبًا</p>
+        <h2 data-i18n="contactTitle">اجعل لحظتك القادمة<br>أكثر دفئًا</h2>
+        <p data-i18n="contactCopy">نفتتح أبوابنا يوميًا من 8 صباحًا وحتى 12 ليلاً</p>
+        <a class="btn btn-primary" id="whatsapp-link" href="https://wa.me/?text=Hello%20NOIR%20CAF%C3%89" target="_blank" rel="noopener" data-i18n="whatsapp">تواصل عبر واتساب</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" id="whatsapp-float" href="https://wa.me/?text=Hello%20NOIR%20CAF%C3%89" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3A12.98 12.98 0 0 0 5 22.77L3 29l6.38-1.96A13 13 0 1 0 16.04 3Zm7.56 18.38c-.32.9-1.88 1.72-2.62 1.83-.67.1-1.53.14-2.47-.15-.57-.17-1.3-.43-2.24-.84-3.94-1.7-6.5-5.67-6.69-5.93-.2-.26-1.61-2.14-1.61-4.08 0-1.94 1.02-2.89 1.38-3.29.36-.39.79-.49 1.05-.49h.76c.25 0 .57-.09.89.68.32.77 1.09 2.66 1.18 2.85.1.2.16.43.03.69-.13.26-.2.42-.39.65-.19.23-.4.51-.57.69-.19.19-.39.4-.17.79.23.39 1 1.65 2.14 2.67 1.47 1.31 2.71 1.72 3.1 1.91.39.19.62.16.85-.1.23-.26.98-1.14 1.24-1.53.26-.39.52-.32.88-.19.36.13 2.27 1.07 2.66 1.27.39.19.65.29.75.45.09.16.09.94-.23 1.84Z"/></svg>
+  </a>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a class="brand" href="#home"><span class="brand-mark">N</span><span class="brand-name">NOIR <b>CAFÉ</b></span></a>
+      <div class="nexora-credit">
+          <strong>Designed &amp; Developed by NEXORA</strong>
+          <span>BUILD • INNOVATE • TRANSFORM</span>
+      </div>
+      <p>© <span id="year">2026</span> NOIR CAFÉ</p>
+    </div>
+  </footer>
+</body>
+</html>
